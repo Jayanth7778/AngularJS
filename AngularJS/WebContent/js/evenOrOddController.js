@@ -1,15 +1,8 @@
 /**
  * Even Or Odd
  */
-app.controller('EvenOrOddController',function($scope){
+app.controller('EvenOrOddController',function($scope,EvenOrOddService) {
 	$scope.evenOrOdd=function(){
-		if($scope.num %2==0)
-			{
-				$scope.result=$scope.num + "is Even"
-			}
-			else
-			{
-				$scope.result=$scope.num + "is Odd"
-			}
+		$scope.result=EvenOrOddService.evenOrOdd($scope.num)
 	}
 })
