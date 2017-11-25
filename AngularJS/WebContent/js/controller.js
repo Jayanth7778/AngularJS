@@ -17,3 +17,5 @@ app.controller('MessageController',function($scope)
 							  {'empno':101,'empname':'Smith','dept':'Traning'},
 							  {'empno':102,'empname':'Adam','dept':'IT Support'}]
 		})
+		
+		
